@@ -1,40 +1,26 @@
-# L45 – Login Activity Report
+# LoginWatch
+### Login Activity Monitoring and Security Reporting System
 
-**Student:** SABAA MEMON | **Roll:** F19 | **Division:** G | **Enrollment:** 24004501210193
+## Student Details
 
-## Problem
-Analyse a sample login log and report failed logins and peak hours.
+- **Student Name:** Sabaa Memon
+- **Division:** G
+- **Roll Number:** F-19
+- **Course:** Bachelor of Computer Applications (BCA)
 
-## Who will use it
-A lab admin checking suspicious login attempts (sample data).
+## Project Details
 
-## Folder structure
-- main.sh – menu (run with ./main.sh)
-- lib/functions.sh – all functions
-- data/ – data files
-- reports/ – reports created by the script
-- backups/ – tar.gz backups
-- logs/ – activity.log and cron.log
+- **Subject:** OS Linux Lab 260120510
+- **Project ID:** L38
+- **Project Title:** LoginWatch – Login Activity Monitoring and Security Reporting System
 
-## Features
-1. Failed attempts per user
-2. Users with more than 3 failures (alert)
-3. Peak login hours
-4. Successful logins per day
-5. Security report file
+## Project Guide
 
-## How to run
-    cd ~/linux_project/loginwatch
-    ./main.sh
-    ./main.sh --help
+This project was completed under the guidance of
 
-## Crontab task
-Every day at 6 AM, append users with more than 3 failed logins to security_alerts.txt
+**Dr. Anjum Y. Mansuri**, Assistant Professor, Computer Applications,  
+LJ Institute of Computer Applications, LJ University, Ahmedabad.
 
-    0 6 * * * /bin/bash $HOME/linux_project/loginwatch/main.sh --cron >> $HOME/linux_project/loginwatch/logs/cron.log 2>&1
+**GitHub:** [@anjum-mansuri](https://github.com/anjum-mansuri)
 
-## Commands used
-awk, grep, sort, uniq -c, cut
-
-## What I learned
-(write 3-5 lines here)
+**Academic Year:** 2026–2027
